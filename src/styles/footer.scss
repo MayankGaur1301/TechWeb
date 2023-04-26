@@ -1,0 +1,82 @@
+@import '../styles/colors.scss';
+
+footer {
+    background-color: $first;
+    height: 200px;
+    width: 100%;
+    padding: 2rem;
+    color: darkslategrey;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >h1 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: darkslategrey;
+            font-weight: 700;
+
+
+            >span {
+                color: $third;
+                font-size: 30px;
+
+            }
+
+            >span2 {
+                color: darkslategrey;
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+        }
+
+
+    }
+
+    .para {
+        font: 500 1.2rem $text1;
+    }
+
+    .follow-us {
+        font: 700 1.5rem 'Poppins';
+        color: $third;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      
+    }
+
+    .anchor-texts {
+        display: flex;
+        align-items: center;
+        
+
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: darkslategrey;
+            margin-inline: 0.8rem;
+            font: 900 1rem $text2;
+            
+            &:hover {
+                color: $third;
+            }
+
+            >a {
+             margin-inline: 0.3rem;
+
+             &:hover {
+                color: $third;
+             }
+            }
+        }
+    }
+
+}
